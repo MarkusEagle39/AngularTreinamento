@@ -1,0 +1,17 @@
+<div class="mesa">
+    <div class="tema">
+      <h1>NgFor</h1>
+    </div>
+
+    <div class="mesaVerde">
+      <div *ngFor="let baralho of baralhos">
+        <app-card class="card"
+        name={{baralho.name}}
+        naipe={{baralho.naipe}}
+        color="{{baralho.cor}}"
+        (cardClickd)="displayCounter($event)"
+        ></app-card>
+      </div> 
+    </div>
+  </div>
+  

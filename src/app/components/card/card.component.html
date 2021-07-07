@@ -1,0 +1,10 @@
+<mat-card
+  class="card {{ color }}"
+  [class.active]="classApplied"
+  (click)="cardClickd()"
+>
+  <div class="cardTopLeft">{{ name }}</div>
+  <div class="cardTopLeftNaipe">{{ naipe }}</div>
+  <div class="cardBottomRightNaipe">{{ naipe }}</div>
+  <div class="cardBottomRight">{{ name }}</div>
+</mat-card>
