@@ -12,13 +12,16 @@ import { CardComponent } from './components/card/card.component';
 import {MatCardModule} from '@angular/material/card';
 import { CardInputOutputComponent } from './pages/card-input-output/card-input-output.component';
 import { CardNgforComponent } from './pages/card-ngfor/card-ngfor.component';
-
+import { CardNgifComponent } from './pages/card-ngif/card-ngif.component';
+import { CardForComponent } from './pages/card-for/card-for.component';
 @NgModule({
   declarations: [
     AppComponent,
     CardComponent,
     CardInputOutputComponent,
     CardNgforComponent,
+    CardNgifComponent,
+    CardForComponent,
   ],
   imports: [
     BrowserModule,

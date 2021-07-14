@@ -1,0 +1,49 @@
+<div class="mesa">
+  <div class="tema">
+    <h1>NgIf</h1>
+  </div>
+  <div class="mesaVerde">
+    <div class="code">
+      clubs3 = {{ clubs3 }}
+      <br />
+      hearts3 = {{ hearts3 }}
+      <br />
+      diams3 = {{ diams3 }}
+      <br />
+      spades3 = {{ spades3 }}
+    </div>
+    <div class="cards">
+      <app-card
+        name="3"
+        naipe="&clubs;"
+        color="black"
+        (click)="clubs3 = !clubs3"
+        *ngIf="diams3"
+      ></app-card>
+
+      <app-card
+        name="3"
+        naipe="&hearts;"
+        color="red"
+        (click)="hearts3 = !hearts3"
+        *ngIf="spades3"
+      ></app-card>
+
+      <app-card
+        name="3"
+        naipe="&diams;"
+        color="red"
+        *ngIf="clubs3"
+        (click)="diams3 = !diams3"
+      ></app-card>
+
+      <app-card
+        name="3"
+        naipe="&spades;"
+        color="black"
+        *ngIf="hearts3"
+        (click)="spades3 = !spades3"
+      ></app-card>
+    </div>
+  </div>
+</div>

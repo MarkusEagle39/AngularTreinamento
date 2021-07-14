@@ -31,24 +31,24 @@
 .cardTopLeft {
   position: absolute;
   top: 15px;
-  left: 16px;
+  left: 18px;
 }
 .cardTopLeftNaipe {
   position: absolute;
   top: 55px;
-  left: 18px;
+  left: 11px;
 }
 
 .cardBottomRightNaipe {
   position: absolute;
   bottom: 55px;
-  right: 17px;
+  right: 11px;
   transform: rotate(-180deg);
 }
 
 .cardBottomRight {
   position: absolute;
   bottom: 15px;
-  right: 16px;
+  right: 18px;
   transform: rotate(-180deg);
 }
